@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* SECCIONES */
+.contenedorsecciones1 {
+  background-color: rgba(84, 108, 34, 0.68);
+  width: 1160px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 200px;
+  align-items: center;
+  display: flex;
+  border-radius: 8px;
+  grid-area: header;
+}
+
+.listasecciones1 {
+  display: flex;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.69);
+}
+.listasecciones1 li {
+  list-style-type: none;
+  font-family: "Italiana";
+}
+.listasecciones1 a {
+  padding: 0px 40px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.69);
+  text-decoration: none;
+  padding: 0px 20px;
+  margin-left: 110px;
+  color: #FFFFFF;
+}
+
+/*SECCION HISTORIA*/
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "titulo imagen" "texto imagen";
+}
+
+.titulohistoria {
+  grid-area: titulo;
+  width: 600px;
+  margin: 50px;
+  margin-left: 220px;
+  text-align: center;
+  border: 1px dashed darkolivegreen;
+  border-radius: 8px;
+}
+.titulohistoria h1 {
+  margin: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}/*# sourceMappingURL=main.css.map */
