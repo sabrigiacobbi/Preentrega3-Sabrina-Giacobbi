@@ -43,13 +43,7 @@ body {
 }
 
 /*SECCION HISTORIA*/
-.containerhistoria {
-  display: grid;
-  grid-template-columns: 0.8fr 0.7fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "titulo imagen" "texto imagen";
-}
+
 
 .titulohistoria {
   grid-area: titulo;
@@ -59,6 +53,7 @@ body {
   text-align: center;
   border: 1px dashed darkolivegreen;
   border-radius: 8px;
+  
 }
 .titulohistoria h1 {
   margin: 40px;
@@ -504,6 +499,179 @@ body {
   margin-right: 50px;
 }
 
+/* IMAGENES ARTICULOS */
+.seccionoticias {
+  display: flex;
+}
+
+.calentamientoglobal {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contaminacion {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.biodiversidad, .deforestacion {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  margin: auto;
+  margin-top: 67px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.textovideo {
+  display: flex;
+  justify-content: center;
+}
+
+.textoprincipal {
+  width: 350px;
+  text-align: center;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.divisiontexto {
+  align-items: center;
+}
+.divisiontexto h2 {
+  margin-left: 620px;
+  margin-top: 40px;
+  border: 1px solid rgba(84, 108, 34, 0.68);
+  height: 50px;
+  width: 280px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisiontexto2 {
+  margin-top: 40px;
+  width: 450px;
+  font-size: 18px;
+}
+
+.divisionvideos {
+  display: flex;
+}
+
+.video1 {
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+.video2 {
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.textoprincipal2 h2 {
+  border: 2px solid #FFFFFF;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 40%;
+}
+
+.tips {
+  display: flex;
+}
+
+.center-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+  position: relative;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+span {
+  z-index: 999;
+  height: 3px;
+  margin: 1px;
+  width: 30px;
+  background: #fff;
+  transition: 0.4s ease;
+}
+
+span:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+span:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+span:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+span:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+  transform: rotate(-225deg);
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -757,6 +925,356 @@ indice {
 
 .titulo__basuraresponsable {
   margin-left: 300px;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: rgba(84, 108, 34, 0.55);
+  border-radius: 12px;
+  margin: 13px;
+}
+.footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer h3 {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 26px;
+}
+.footer h4 {
+  color: rgba(0, 0, 0, 0.6);
+  align-self: center;
+}
+.footer p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.imagenfooter {
+  width: 50px;
+  border-radius: 11px;
+  margin: 10px;
+  margin-right: 10px;
+}
+.imagenfooter:hover {
+  animation: movimiento 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px) rotate(-1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*ZONA RESPONSIVE*/
+@media all and (max-width: 380px) {
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 130px 130px;
+    grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img4 img4" "img5 img5" "img5 img5" "img6 img7" "img8 img8" "img8 img8";
+    margin: 0;
+  }
+  .galeria__imagen--1 {
+    width: 360px;
+    height: 250px;
+  }
+  .galeria__imagen--2 {
+    width: 170px;
+    height: 150px;
+  }
+  .galeria__imagen--3 {
+    width: 170px;
+    height: 150px;
+  }
+  .galeria__imagen--4 {
+    width: 360px;
+    height: 80px;
+  }
+  .titulo4 {
+    margin-top: 10px;
+  }
+  .galeria__imagen--5 {
+    width: 360px;
+    height: 250px;
+  }
+  .galeria__imagen--6 {
+    width: 170px;
+    height: 150px;
+  }
+  .galeria__imagen--7 {
+    width: 170px;
+    height: 150px;
+  }
+  .galeria__imagen--8 {
+    width: 360px;
+    height: 250px;
+  }
+  .textonaturaleza p {
+    width: 340px;
+    margin-left: 14px;
+  }
+  .tituloprincipal {
+    margin-left: 35px;
+  }
+  .contenedorsecciones {
+    background-color: rgba(84, 108, 34, 0.68);
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .listasecciones {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .listasecciones li {
+    background-color: rgba(190, 220, 189, 0.89);
+    margin-top: 10px;
+    width: 290px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedorsecciones1 {
+    background-color: rgba(84, 108, 34, 0.68);
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .listasecciones1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .listasecciones1 li {
+    background-color: rgba(190, 220, 189, 0.89);
+    margin-top: 10px;
+    width: 290px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .listasecciones1 li a {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.69);
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #FFFFFF;
+  }
+  .contenedorimagenes {
+    display: flex;
+    margin-top: 20px;
+    margin: 5%;
+  }
+  .imagenprincipal1 {
+    width: 100%;
+    height: 250px;
+  }
+  .containerhistoria {
+    display: flex;
+    flex-direction: column;
+  }
+  .textohistoria p {
+    width: 340px;
+    margin-left: 10px;
+  }
+  .textohistoria h2 {
+    margin-left: 130px;
+    margin-top: 0px;
+  }
+  .imagenhistoria img {
+    width: 320px;
+    height: 480px;
+    margin: 20px 25px 20px 25px;
+  }
+  .carousel-inner {
+    width: 350px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .titulohistoria {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .seccionoticias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .noticias {
+    margin-top: 30px;
+    margin-left: 0px;
+    background-color: rgba(84, 108, 34, 0.68);
+    height: 57px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .articulo1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .textoprincipal2 h2 {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .textoprincipal2 img {
+    width: 300px;
+    height: 250px;
+    margin-left: 30px;
+  }
+  .textovideo {
+    display: inline-block;
+  }
+  .divisionvideos {
+    display: flex;
+    flex-direction: column;
+  }
+  .video1 {
+    width: 340px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .video2 {
+    width: 340px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .divisiontexto h2 {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .divisiontexto2 {
+    margin-top: 40px;
+    width: 250px;
+  }
+  .contenido__indice {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .contenidoart1 {
+    width: 250px;
+  }
+  .contenido__art1 h5 {
+    margin-left: 25px;
+  }
+  .texto1__rrr {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .texto2__rrr {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .texto3__rrr {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .texto4__rrr {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .titulo__reciclar {
+    margin-left: 25px;
+  }
+  .plasticos {
+    width: 280px;
+    margin-left: 50px;
+  }
+  .art2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .art2 div p {
+    width: 280px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .texto__art3 {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .ecologico {
+    margin-left: 40px;
+  }
+  .texto__art4 {
+    width: 280px;
+    margin-left: 40px;
+  }
+  .titulo__reciclar {
+    margin: 30px 30px 0px 50px;
+  }
+  .titulo__plasticos {
+    margin-left: 50px;
+  }
+  .titulo__basura {
+    margin-left: 40px;
+  }
+  .lista__indice {
+    margin-left: 50px;
+  }
+  .animacion:hover {
+    scale: 0.8;
+  }
+  .footer div h4 {
+    margin-left: 19px;
+  }
+  .footer div h3 {
+    margin-left: 15px;
+    margin-bottom: 23px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
